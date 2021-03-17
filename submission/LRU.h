@@ -1,8 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <signal.h>
-#include <unistd.h>
-#include <stdbool.h>
+#ifndef LRU_H
+#define LRU_H
 
 typedef struct lru_ // job node definition
 {   
@@ -19,8 +16,8 @@ typedef struct queue { // queue definition
 } Queue;
 
 // functions about a job
-LRU* newNode(int val) ; // construction function for a new job
-void freeALRU(LRU *j) // Deconstruction function for an old job
+LRU* newNode(int val); // construction function for a new job
+void freeALRU(LRU *j); // Deconstruction function for an old job
 
 
 // functions about a queue
